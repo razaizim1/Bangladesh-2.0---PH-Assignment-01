@@ -8,11 +8,11 @@ body {
     font-family: "Fira Sans", serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+.container {
     width: 1280px;
     margin: 0 auto;
 }
@@ -54,6 +54,29 @@ button.bd-btn {
     color: #ffff;
 }
 
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title{
+    padding-bottom: 22px;
+}
+
+.section-title .title {
+    color: #0E0E0E;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.section-desc {
+    color: rgba(14, 14, 14, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 /* Banner Section */
 
 .hero-section {
@@ -90,7 +113,74 @@ button.bd-btn {
     border: 1px solid #006A50;
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
     background-color: transparent;
     color: #006A50;
+}
+
+/* Pillars Section */
+
+.pillars-item-wrapper, .vision-item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.pillar-item {
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+}
+
+.pillar-item .item-logo {
+    margin-bottom: 13px;
+}
+
+.vision-title {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.pillar-desc {
+    color: rgba(14, 14, 14, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Vision Section */
+
+.vision-item {
+    border-radius: 16px;
+    border: 0px solid #5490F5;
+    background: rgba(84, 144, 245, 0.20);
+    padding: 32px;
+}
+
+.vision-item .item-logo {
+    margin-bottom: 10px;
+}
+
+.vision-title {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.vision-desc {
+    color: rgba(14, 14, 14, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 19px;
+}
+
+.vision-item .hero-btn {
+    font-size: 14px;
+    padding: 11px 20px;
 }
