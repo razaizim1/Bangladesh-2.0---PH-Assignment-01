@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F5F5F5;
+    font-family: "Fira Sans", serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    padding-top: 24px;
+}
+
+.bd-logo h1 {
+    color: #0E0E0E;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+button.signin {
+    color: #006A50;
+    font-family: "Fira Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 8px;
+    border: 1px solid #006A50;
+    padding: 13px 30px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+button.signin:hover{
+    background-color: #006A50;
+    color: #ffff;
+}
