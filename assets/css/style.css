@@ -13,7 +13,7 @@ a {
 }
 
 .container {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -58,8 +58,8 @@ button.bd-btn {
     padding: 80px 0;
 }
 
-.section-title{
-    padding-bottom: 22px;
+.section-title {
+    padding-bottom: 32px;
 }
 
 .section-title .title {
@@ -120,7 +120,8 @@ button.bd-btn {
 
 /* Pillars Section */
 
-.pillars-item-wrapper, .vision-item-wrapper {
+.pillars-item-wrapper,
+.vision-item-wrapper {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -143,6 +144,10 @@ button.bd-btn {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 5px;
+}
+
+.pillars-section .title {
+    margin-bottom: 0;
 }
 
 .pillar-desc {
@@ -183,4 +188,104 @@ button.bd-btn {
 .vision-item .hero-btn {
     font-size: 14px;
     padding: 11px 20px;
+}
+
+/* Quote Section */
+
+.quote-section {
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    background-image: url("/assets/images/quote-bg.png");
+    background-repeat: no-repeat;
+    background-position: 24px 24px;
+    margin-top: 32px;
+}
+
+.quote-content {
+    padding: 48px 24px;
+}
+
+.quote-desc {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.quote-content .title {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.quote-content .title {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 2px;
+}
+
+/* Recent News Section */
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 48px;
+    background: #FFF;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.item-img img {
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.news-title {
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.news-channel {
+    margin-bottom: 10px;
+}
+
+.news-date-time {
+    color: rgba(14, 14, 14, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.news-date-time .date {
+    margin-right: 12px;
+}
+
+.news-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.news-content .hero-btn {
+    padding: 10px 26px;
+}
+
+.news-item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.news-item:nth-child(3) {
+    flex-direction: row;
+    margin-bottom: 0;
 }
