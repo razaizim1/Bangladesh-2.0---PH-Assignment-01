@@ -1,19 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #F5F5F5;
     font-family: "Fira Sans", serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
     padding-top: 24px;
+    padding-bottom: 44px;
 }
 
 .bd-logo h1 {
@@ -23,7 +32,7 @@ body{
     line-height: normal;
 }
 
-button.signin {
+.bd-btn {
     color: #006A50;
     font-family: "Fira Sans";
     font-size: 18px;
@@ -33,10 +42,55 @@ button.signin {
     border: 1px solid #006A50;
     padding: 13px 30px;
     transition: all .4s ease-in-out;
+    display: inline-block;
+}
+
+button.bd-btn {
     cursor: pointer;
 }
 
-button.signin:hover{
+.bd-btn:hover {
     background-color: #006A50;
     color: #ffff;
+}
+
+/* Banner Section */
+
+.hero-section {
+    height: 50vh;
+    border-radius: 24px;
+    background: #C6E4D6;
+    display: flex;
+    align-items: center;
+    padding: 80px 60px;
+    justify-content: space-between;
+}
+
+.hero-subtitle {
+    color: rgba(14, 14, 14, 0.50);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.hero-title {
+    color: #0E0E0E;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 23px;
+}
+
+.hero-btn {
+    border-radius: 8px;
+    background: #006A50;
+    color: #ffff;
+    padding: 15px 32px;
+    border: 1px solid #006A50;
+}
+
+.hero-btn:hover{
+    background-color: transparent;
+    color: #006A50;
 }
