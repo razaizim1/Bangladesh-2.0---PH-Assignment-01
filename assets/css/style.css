@@ -77,6 +77,10 @@ button.bd-btn {
     line-height: 24px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* Banner Section */
 
 .hero-section {
@@ -134,6 +138,10 @@ button.bd-btn {
     background: #FFF;
 }
 
+.pillar-title {
+    margin-bottom: 12px;
+}
+
 .pillar-item .item-logo {
     margin-bottom: 13px;
 }
@@ -161,9 +169,40 @@ button.bd-btn {
 
 .vision-item {
     border-radius: 16px;
-    border: 0px solid #5490F5;
     background: rgba(84, 144, 245, 0.20);
     padding: 32px;
+    max-width: 410px;
+    height: 325px;
+    box-sizing: border-box;
+}
+
+.vision-item:nth-child(2) {
+    background: #C6E4D6;
+}
+
+.vision-item:nth-child(2) .hero-btn{
+    background: #09A15C;
+    border-color: #09A15C;
+}
+
+.vision-item:nth-child(2) .hero-btn:hover{
+    border-color: #09A15C;
+    color: #09A15C;
+    background: #fff;
+}
+
+.vision-item:nth-child(3) {
+    background: #F7EBCF;
+}
+
+.vision-item:nth-child(3) .hero-btn{
+    background: #FFC239;
+    border-color: #FFC239;
+}
+
+.vision-item:nth-child(3) .hero-btn:hover{
+    border-color: #FFC239;
+    color: #FFC239;
 }
 
 .vision-item .item-logo {
@@ -175,6 +214,7 @@ button.bd-btn {
     font-size: 20px;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 10px;
 }
 
 .vision-desc {
@@ -188,6 +228,14 @@ button.bd-btn {
 .vision-item .hero-btn {
     font-size: 14px;
     padding: 11px 20px;
+    background: #5490F5;
+    border-color: #5490F5;
+}
+
+.vision-item .hero-btn:hover{
+    border-color: #5490F5;
+    color: #5490F5;
+    background: #fff;
 }
 
 /* Quote Section */
@@ -227,6 +275,64 @@ button.bd-btn {
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 2px;
+}
+
+/* Opinion Section */
+.opinion-table {
+    padding: 32px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+section.opinior-section.section-padding {
+    padding-bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr th:first-child {
+    border-right: none;
+}
+
+thead tr th:last-child {
+    border-left: none;
+}
+
+.opinior-section th,
+.opinior-section td {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgba(255, 255, 255, 0.10);
+    padding: 24px;
+    text-align: left;
+}
+
+.opinior-section th {
+    background-color: #d1e7dd;
+    color: #0E0E0E;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    border-collapse: collapse;
+}
+
+.opinior-section td {
+    color: #0E0E0E;
+    font-weight: 600;
+    padding: 18px 24px;
+}
+
+.opinior-section select {
+    border-radius: 4px;
+    border: 1px solid #0E0E0E;
+    background: #C6E4D6;
+    color: #0E0E0E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12.5px 16.5px;
 }
 
 /* Recent News Section */
@@ -288,4 +394,184 @@ button.bd-btn {
 .news-item:nth-child(3) {
     flex-direction: row;
     margin-bottom: 0;
+}
+
+/* Donate Section */
+
+.donate-section{
+    margin-bottom: 80px;
+}
+
+.donate-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.donate-card {
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    color: rgba(14, 14, 14, 0.80);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 40px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.donate-card:hover,
+.active {
+    background: #C6E4D6;
+}
+
+.donate-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.donate-form input[type="text"] {
+    padding: 20px 40px;
+    width: 77%;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.donate-form input[type="text"]{
+    color: rgba(14, 14, 14, 0.30);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.donate-form input[type="text"]:focus{
+    outline: none;
+}
+
+.donate-form .bd-btn {
+    border-radius: 8px;
+    border: 1px solid rgba(14, 14, 14, 0.10);
+    background: #006A50;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 32px;
+}
+
+.donate-form .bd-btn:hover{
+    background: #fff;
+    color: #006A50;
+    border-color: #006A50;
+}
+/* Footer Section */
+
+.footer-content {
+    border-radius: 24px;
+    background: #C6E4D6;
+    padding: 80px 100px;
+    margin-bottom: 80px;
+}
+
+.footer-title {
+    color: #0E0E0E;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.footer-desc {
+    color: rgba(14, 14, 14, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+input {
+    border: none;
+}
+
+.footer-content input[type="email"] {
+    border-radius: 8px 0px 0px 8px;
+    background: #FFF;
+    border: none;
+    padding: 18px 40px;
+    color: rgba(14, 14, 14, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    width: 600px;
+}
+
+.footer-content input[type="email"]:focus {
+    outline: none;
+}
+
+.footer-content input[type="email"]::placeholder {
+    color: rgba(14, 14, 14, 0.30);
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-content .bd-btn {
+    border-radius: 0px 8px 8px 0px;
+    background: #006A50;
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.footer-content .bd-btn:hover {
+    background-color: #fff;
+    color: #006A50;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spam-text {
+    color: rgba(14, 14, 14, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+}
+
+.footer-socials-n-logo {
+    padding: 50px 0;
+}
+
+.footer-logo {
+    color: #0E0E0E;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 32px;
+}
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    margin-top: 32px;
 }
